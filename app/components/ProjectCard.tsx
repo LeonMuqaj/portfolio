@@ -46,7 +46,7 @@ export default function ProjectCard({
             <img
               src={imageSrc}
               alt={imageAlt || title}
-              className="aspect-video rounded object-cover"
+              className="w-full h-full rounded object-cover"
             />
           ) : (
             <div className="aspect-video bg-slate-800 rounded" />

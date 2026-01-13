@@ -30,7 +30,7 @@ export default function LeftSide() {
         <li className="mr-5 shrink-0 text-xs">
           <a
             className="block text-slate-400 hover:text-slate-200 transition-colors"
-            href="https://github.com"
+            href="https://github.com/LeonMuqaj"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="GitHub (opens in a new tab)"
@@ -43,7 +43,7 @@ export default function LeftSide() {
         <li className="mr-5 shrink-0 text-xs">
           <a
             className="block text-slate-400 hover:text-slate-200 transition-colors"
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/leon-muqaj-a11b2b363/"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="LinkedIn (opens in a new tab)"
@@ -56,7 +56,7 @@ export default function LeftSide() {
         <li className="mr-5 shrink-0 text-xs">
           <a
             className="block text-slate-400 hover:text-slate-200 transition-colors"
-            href="https://instagram.com"
+            href="https://www.instagram.com/leon.muqaj"
             target="_blank"
             rel="noreferrer noopener"
             aria-label="Instagram (opens in a new tab)"
