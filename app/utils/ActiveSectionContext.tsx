@@ -1,0 +1,49 @@
+"use client";
+
+import React, { createContext, useContext, useState, ReactNode } from "react";
+
+export type SectionName = "about" | "experience" | "projects";
+
+interface ActiveSectionContextType {
+  activeSection: SectionName;
+  setActiveSection: React.Dispatch<React.SetStateAction<SectionName>>;
+  timeOfLastClick: number;
+  setTimeOfLastClick: React.Dispatch<React.SetStateAction<number>>;
+}
+
+const ActiveSectionContext = createContext<ActiveSectionContextType | null>(
+  null
+);
+interface ActiveSectionProviderProps {
+  children: ReactNode;
+}
+
+export function ActiveSectionProvider({
+  children,
+}: ActiveSectionProviderProps) {
+  const [activeSection, setActiveSection] = useState<SectionName>("about");
+  const [timeOfLastClick, setTimeOfLastClick] = useState(0);
+
+  return (
+    <ActiveSectionContext.Provider
+      value={{
+        activeSection,
+        setActiveSection,
+        timeOfLastClick,
+        setTimeOfLastClick,
+      }}
+    >
+      {children}
+    </ActiveSectionContext.Provider>
+  );
+}
+
+export function useActiveSection() {
+  const context = useContext(ActiveSectionContext);
+  if (context === null) {
+    throw new Error(
+      "useActiveSection must be used within an ActiveSectionProvider"
+    );
+  }
+  return context;
+}
