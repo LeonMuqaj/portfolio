@@ -5,7 +5,7 @@ import NavLink from "../components/NavLink";
 
 export default function LeftSide() {
   return (
-    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 pl-0">
+    <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 pl-0 md:pl-6">
       <div>
         <h1 className="text-6xl font-bold tracking-tight text-slate-200">
           <a href="/">Leon Muqaj</a>

@@ -82,8 +82,8 @@ export default function RightSide() {
             />
 
             <ExperienceCard
-              dateRange="2019 — 2024"
-              dateAriaLabel="2019 to 2024"
+              dateRange="2023 — 2024"
+              dateAriaLabel="2023 to 2024"
               title="Full Stack Developer"
               company="Freelancer"
               href="https://github.com/LeonMuqaj"
