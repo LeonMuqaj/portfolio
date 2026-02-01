@@ -67,7 +67,7 @@ export default function RightSide() {
             <ExperienceCard
               dateRange="2025 — Present"
               dateAriaLabel="2025 to Present"
-              title="Junior Front End Developer"
+              title="Front End Developer"
               company="Tetbit llc"
               href="https://www.tetbit.com/"
               description="Build and maintain critical components used to construct the company's web presence. Work closely with cross-functional teams, including designers and project managers, to implement new features."
